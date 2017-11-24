@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class UserManager {
+    public static final UserManager INSTANCE = new UserManager();
     private Map<String, User> userMap = new HashMap<>();
 
     public boolean addUser(User user) {
